@@ -20,18 +20,20 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
    color: #fff;
-   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
-   transition: opacity 250ms ease-in-out 300ms;
+   transition: all 0.2s ease-in-out;
 `
 
 export const Icon = styled.div`
-   position: absolute;
-   top: 1.2rem;
-   right: 1.5rem;
+   position: fixed;
+   top: 1.25rem;
+   right: 1.7rem;
    background: transparent;
    font-size: 2rem;
    cursor: pointer;
    outline: none;
+   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+   transition: opacity 250ms ease-in-out 150ms;
+
 `
 
 export const SidebarWrapper = styled.div`
