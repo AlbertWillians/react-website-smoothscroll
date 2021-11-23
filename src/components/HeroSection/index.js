@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button } from '../ButtonElement'
+import { Button } from '../ButtonElements'
 import Video from '../../videos/video.mp4'
 import {
    ArrowForward,
@@ -32,7 +32,7 @@ const HeroSection = () => {
                credits towards your next payment.
             </HeroP>
             <HeroBtnWrapper>
-               <Button primary dark to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+               <Button primary='true' dark='true' to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
                   Get started {hover ? <ArrowForward /> : <ArrowRight />}
                </Button>
             </HeroBtnWrapper>
